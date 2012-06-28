@@ -11,3 +11,5 @@ filetype indent on
 
 set hlsearch
 set incsearch
+
+map <F2> :NERDTreeToggle<CR>
