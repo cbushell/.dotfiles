@@ -18,3 +18,4 @@ NO_COLOUR="\[\033[0m\]"
 PS1="$RED\$(~/.rvm/bin/rvm-prompt i v g)$GREEN \w$YELLOW\$(parse_git_branch)$NO_COLOUR "
 
 alias ls="ls -latrG"
+alias webserve="python -m SimpleHTTPServer"
