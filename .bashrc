@@ -17,5 +17,8 @@ NO_COLOUR="\[\033[0m\]"
 
 PS1="$RED\$(~/.rvm/bin/rvm-prompt i v g)$GREEN \w$YELLOW\$(parse_git_branch)$NO_COLOUR "
 
+# Postgres
+export PGDATA=/usr/local/pgsql/data
+
 alias ls="ls -latrG"
 alias webserve="python -m SimpleHTTPServer"
