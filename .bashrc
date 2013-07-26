@@ -20,5 +20,7 @@ PS1="$RED\$(~/.rvm/bin/rvm-prompt i v g)$GREEN \w$YELLOW\$(parse_git_branch)$NO_
 # Postgres
 export PGDATA=/usr/local/pgsql/data
 
+export HISTFILESIZE=5000
+
 alias ls="ls -latrG"
 alias webserve="python -m SimpleHTTPServer"
