@@ -10,6 +10,10 @@ function parse_git_branch () {
        git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
+function git_describe () {
+      git diff-tree --no-commit-id --name-only -r "$@";
+}
+
 RED="\[\033[0;31m\]"
 YELLOW="\[\033[0;33m\]"
 GREEN="\[\033[0;32m\]"
@@ -24,3 +28,4 @@ export HISTFILESIZE=5000
 
 alias ls="ls -latrG"
 alias webserve="python -m SimpleHTTPServer"
+alias gitdescribe=git_describe 
