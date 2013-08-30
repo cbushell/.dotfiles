@@ -6,6 +6,9 @@ PATH=/usr/local/bin:$PATH:$HOME/.rvm/bin
 # Completion for RVM
 [[ -r "$HOME/.rvm/scripts/completion" ]] && . "$HOME/.rvm/scripts/completion"
 
+# This loads NVM
+[[ -s /Users/chris/.nvm/nvm.sh ]] && . /Users/chris/.nvm/nvm.sh 
+
 function parse_git_branch () {
        git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
