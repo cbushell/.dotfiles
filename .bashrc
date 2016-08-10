@@ -9,6 +9,10 @@ PATH=/usr/local/bin:$PATH:$HOME/.rvm/bin
 # This loads NVM
 [[ -s /Users/chris/.nvm/nvm.sh ]] && . /Users/chris/.nvm/nvm.sh 
 
+# NVM
+export NVM_DIR="$HOME/.nvm"
+. "$(brew --prefix nvm)/nvm.sh"
+
 function parse_git_branch () {
        git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
